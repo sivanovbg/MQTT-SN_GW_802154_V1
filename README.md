@@ -1,4 +1,6 @@
-# MQTT-SN to MQTT Gateway implementation based on MRF24J40 ESP12 NodeMCU with Arduino code
+# MQTT-SN to MQTT Gateway
+
+MQTT-SN to MQTT Gateway implementation based on MRF24J40 ESP12 NodeMCU with Arduino code
 
 Visit project website at https://sites.google.com/view/hobbyiot/projects/mqtt-sn-802-15-4
 
