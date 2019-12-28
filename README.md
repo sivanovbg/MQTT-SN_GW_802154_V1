@@ -15,6 +15,11 @@ Version Alpha 1 (VA1)
 This is a very early implementation. Part of the whole message list according specs is supported so far.
 Topics should be predefined on the client and gateway sides and are fixed to 2 positions alpha-numeric string.
 
+Version 1 (V1)
+
+This is the recent implementation. Most of the bugs from VA1 are fixed now. Part of the whole message list according specs is supported so far.
+Topics should be predefined on the client and gateway sides and are fixed to 2 positions alpha-numeric string. Enjoy!
+
 Messages supported:
 
 CONNECT
