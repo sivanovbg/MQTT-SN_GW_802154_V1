@@ -1,6 +1,6 @@
-##HobbyIoT MQTT-SN to MQTT Gateway
+# HobbyIoT MQTT-SN to MQTT Gateway
 
-##Summary
+## Summary
 
 HobbyIoT NET is an Open source wireless sensor network adventure. The solution concept was developed around the general idea to have a fully open source, easy to program and upgrade, easy to implement and cheap IoT solution.
 
@@ -10,7 +10,7 @@ We are currently looking into the opportunity to join the "Works with Arduino" p
 
 The HobbyIoT NET is an MQTT-SN protocol implementation over 802.15.4 physical connection. It connects together number of End devices - MQTT-SN Clients - capable to measure and control various parameters and appliances. Each End device connects to the MQTT-SN Gateway and exchange information over it with the MQTT Server. This server can either just pass the information or - if programmed - make decisions how to manage the sensor network by itself.
 
-##Resources
+## Resources
 
 Gateway project website: https://www.hobbyiot.net/technology/gateway-operation
 HobbyIoT NET website: https://www.hobbyiot.net/
@@ -25,27 +25,23 @@ MQTT-SN Specification: http://mqtt.org/new/wp-content/uploads/2009/06/MQTT-SN_sp
 
 Twitter, Slack: #HobbyIoT
 
-##Introduction
+## Introduction
 
-<p align="center">
-	<img src="https://github.com/sivanovbg/https://github.com/sivanovbg/https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20PCB%20Parts%20No%20Box.jpg?raw=true" width="50%" />
-</p>
+<picture>
 
 The HobbyIot NET Gateway is built around a ESP8266 NodeMCU and MRF24J40MA radio module. They are connected together via SPI interface. The Gateway is connected to the MQTT Broker (Raspberry Pi running Mosquitto for example) over the WiFi interface of the ESP8266 NodeMCU. The sensor side of the bridge communicates with the end devices over the 2.4 GHz 802.15.4 interface via MRF24J40MA running the MQTT-SN protocol.
 
 The code is written in Arduino environment and is available on GitHub under Open source MIT License.
 
-The Algorithm
+## The Algorithm
 
-<p align="center">
-	<img src="https://github.com/sivanovbg/https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20Gateway%20State%20diagram.png?raw=true" width="50%" />
-</p>
+<algorithm>
 
 After Power on or reset applied to the system both MQTT and MQTT-SN sides are first initialized. The MQTT setup includes a WiFi setup and MQTT connection procedure. The MQTT-SN setup starts with 802.15.4 module and connection parameters set up.
 
 The state diagram describes the MQTT-SN operation of the Bridge including message reception, message processing and data forwarding to and from the MQTT side of the bridge.
 
-#Operation
+## Operation
 
 Once the system is initialized the Gateway is waiting for a message. The main routine (bold arrows) waits for a message to receive. It also checks the state of the modes in the ConnTable.
 
@@ -69,7 +65,7 @@ The algorithm also periodically checks the ConnTable for time-outed nodes and re
 
 For more information and details, please visit the GitHub repo of the project or connect over the #HobbyIoT Slack channel.
 
-##Versions
+## Versions
 
 Version Alpha 1 (VA1)
 
