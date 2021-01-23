@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HobbyIoT%20Logo.png?raw=true" width="10%" align="right"/>
+	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20Pictures/HobbyIoT%20Logo.png?raw=true" width="10%" align="right"/>
 </p>
 
 # HobbyIoT MQTT-SN to MQTT Gateway
@@ -33,7 +33,7 @@ Twitter: https://twitter.com/hobbyiot
 ## Introduction
 
 <p align="center">
-	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20PCB%20Parts%20No%20Box.jpg?raw=true" width="50%" />
+	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20Pictures/HIoT%20GW%20PCB%20Parts%20No%20Box.png?raw=true" width="50%" />
 </p>
 
 The HobbyIot NET Gateway is built around a ESP8266 NodeMCU and MRF24J40MA radio module. They are connected together via SPI interface. The Gateway is connected to the MQTT Broker (Raspberry Pi running Mosquitto for example) over the WiFi interface of the ESP8266 NodeMCU. The sensor side of the bridge communicates with the end devices over the 2.4 GHz 802.15.4 interface via MRF24J40MA running the MQTT-SN protocol.
@@ -47,7 +47,7 @@ After Power on or reset applied to the system both MQTT and MQTT-SN sides are fi
 The state diagram describes the MQTT-SN operation of the Bridge including message reception, message processing and data forwarding to and from the MQTT side of the bridge.
 
 <p align="center">
-	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20Gateway%20State%20diagram.png?raw=true" width="75%" />
+	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20Pictures/HIoT%20Gateway%20State%20diagram.png?raw=true" width="75%" />
 </p>
 
 ## Operation
