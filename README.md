@@ -1,3 +1,7 @@
+<p align="center">
+	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HobbyIoT%20Logo.png?raw=true" width="10%" align="right"/>
+</p>
+
 # HobbyIoT MQTT-SN to MQTT Gateway
 
 ## Summary
@@ -13,6 +17,7 @@ The HobbyIoT NET is an MQTT-SN protocol implementation over 802.15.4 physical co
 ## Resources
 
 Gateway project website: https://www.hobbyiot.net/technology/gateway-operation
+
 HobbyIoT NET website: https://www.hobbyiot.net/
 
 GitHub: https://github.com/sivanovbg/MQTT-SN_GW_802154_V1
@@ -23,11 +28,13 @@ Order board at OSH Park: https://oshpark.com/shared_projects/sBSpwQuP
 
 MQTT-SN Specification: http://mqtt.org/new/wp-content/uploads/2009/06/MQTT-SN_spec_v1.2.pdf
 
-Twitter, Slack: #HobbyIoT
+Twitter: https://twitter.com/hobbyiot
 
 ## Introduction
 
-<picture>
+<p align="center">
+	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20PCB%20Parts%20No%20Box.jpg?raw=true" width="50%" />
+</p>
 
 The HobbyIot NET Gateway is built around a ESP8266 NodeMCU and MRF24J40MA radio module. They are connected together via SPI interface. The Gateway is connected to the MQTT Broker (Raspberry Pi running Mosquitto for example) over the WiFi interface of the ESP8266 NodeMCU. The sensor side of the bridge communicates with the end devices over the 2.4 GHz 802.15.4 interface via MRF24J40MA running the MQTT-SN protocol.
 
@@ -35,11 +42,13 @@ The code is written in Arduino environment and is available on GitHub under Open
 
 ## The Algorithm
 
-<algorithm>
-
 After Power on or reset applied to the system both MQTT and MQTT-SN sides are first initialized. The MQTT setup includes a WiFi setup and MQTT connection procedure. The MQTT-SN setup starts with 802.15.4 module and connection parameters set up.
 
 The state diagram describes the MQTT-SN operation of the Bridge including message reception, message processing and data forwarding to and from the MQTT side of the bridge.
+
+<p align="center">
+	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20Gateway%20State%20diagram.png?raw=true" width="75%" />
+</p>
 
 ## Operation
 
@@ -80,9 +89,15 @@ Topics should be predefined on the client and gateway sides and are fixed to 2 p
 Messages supported:
 
 CONNECT
+
 CONNACK
+
 PINGREQ
+
 PINGRESP
+
 PUBLISH (both directions)
+
 SUBSCRIBE
+
 SUBACK
