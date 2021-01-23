@@ -30,11 +30,11 @@ MQTT-SN Specification: http://mqtt.org/new/wp-content/uploads/2009/06/MQTT-SN_sp
 
 Twitter: https://twitter.com/hobbyiot
 
-## Introduction
-
 <p align="center">
-	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20Pictures/HIoT%20GW%20PCB%20Parts%20No%20Box.png?raw=true" width="50%" />
+	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20Pictures/HIoT%20GW%20PCB%20Parts%20No%20Box.png?raw=true" width="50%" align="right"/>
 </p>
+
+## Introduction
 
 The HobbyIot NET Gateway is built around a ESP8266 NodeMCU and MRF24J40MA radio module. They are connected together via SPI interface. The Gateway is connected to the MQTT Broker (Raspberry Pi running Mosquitto for example) over the WiFi interface of the ESP8266 NodeMCU. The sensor side of the bridge communicates with the end devices over the 2.4 GHz 802.15.4 interface via MRF24J40MA running the MQTT-SN protocol.
 
