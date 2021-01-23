@@ -36,5 +36,5 @@ SUBSCRIBE
 
 SUBACK
 
-!(https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20PCB%20Parts%20No%20Box.JPG)
+!(https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20PCB%20Parts%20No%20Box.jpg)
 
