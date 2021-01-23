@@ -31,7 +31,7 @@ MQTT-SN Specification: http://mqtt.org/new/wp-content/uploads/2009/06/MQTT-SN_sp
 Twitter: https://twitter.com/hobbyiot
 
 <p align="center">
-	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20Pictures/HIoT%20GW%20PCB%20Parts%20No%20Box.png?raw=true" width="50%" align="right"/>
+	<img src="https://github.com/sivanovbg/MQTT-SN_GW_802154_V1/blob/master/HIoT%20GW%20Pictures/HIoT%20GW%20PCB%20Parts%20No%20Box.png?raw=true" width="40%" align="right"/>
 </p>
 
 ## Introduction
